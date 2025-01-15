@@ -5,9 +5,10 @@
     box-sizing: border-box;
 }
 
+/* Estilo básico da página */
 body {
     font-family: Arial, sans-serif;
-    background-color: #323232; /* Cinza escuro */
+    background-color: #2d2d2d; /* Fundo cinza escuro */
     color: #fff;
     display: flex;
     justify-content: center;
@@ -17,61 +18,76 @@ body {
     text-align: center;
 }
 
+/* Cabeçalho */
+header {
+    background-color: #e63946; /* Vermelho */
+    color: #fff;
+    padding: 2rem;
+    width: 100%;
+}
+
 h1 {
     font-size: 2rem;
-    color: #e63946; /* Vermelho */
     margin-bottom: 10px;
 }
 
 p {
     font-size: 1.2rem;
-    color: #f1faee; /* Branco suave */
-    margin-bottom: 20px;
+}
+
+/* Seção de proteção */
+#protection-section {
+    margin-top: 30px;
 }
 
 button {
-    background-color: #e63946; /* Vermelho */
-    color: #f1faee;
+    background-color: #e63946;
+    color: #fff;
     padding: 1rem 2rem;
     border: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 8px;
+    margin-top: 20px;
     transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #d62839; /* Vermelho mais escuro */
+    background-color: #d62839;
 }
 
-.protection-image {
-    max-width: 100%;
+/* Imagem de proteção */
+#protection-image {
+    max-width: 80%;
     height: auto;
-    margin-top: 20px;
+    margin-top: 30px;
     border-radius: 8px;
 }
 
+/* Seção de alertas */
+#alert-section {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff6347; /* Laranja avermelhado */
+    color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    display: none;
+    text-align: center;
+    z-index: 10;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Rodapé */
 footer {
     position: absolute;
     bottom: 10px;
     text-align: center;
     color: #f1faee;
-}
-
-#attack-warning {
-    position: fixed;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #ff0000; /* Vermelho */
-    color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    display: none;
-    z-index: 10;
-    text-align: center;
-}
-
-.hidden {
-    display: none;
+    font-size: 1rem;
 }
