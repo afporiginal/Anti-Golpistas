@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1d3557;
+    color: #f1faee;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1d3557;
+    color: #f1faee;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.protection-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn-custom {
+    background-color: #e63946;
+    color: #f1faee;
+}
+
+.btn-custom:hover {
+    background-color: #d62839;
+}
