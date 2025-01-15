@@ -68,3 +68,28 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Caixa de alerta */
+#attack-warning {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ff0000; /* Vermelho intenso */
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+}
+
+.warning-box {
+    background-color: #ff4d4d;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* Esconder alertas inicialmente */
+.hidden {
+    display: none;
+}
