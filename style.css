@@ -1,95 +1,71 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #323232; /* Cinza escuro */
+    color: #fff;
     margin: 0;
     padding: 0;
-    color: #f1faee; /* Texto claro para contraste */
-}
-
-header {
-    background-color: #444444; /* Cinza intermediário */
-    color: #f1faee;
-    padding: 1.5rem 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
 }
 
 h1 {
-    font-size: 2.5rem;
-    margin: 0;
+    font-size: 2rem;
+    color: #e63946; /* Vermelho */
+    margin-bottom: 10px;
 }
 
 p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    color: #f1faee; /* Branco suave */
+    margin-bottom: 20px;
 }
 
-main {
-    padding: 2rem;
-}
-
-.vpn-section, .protection-section {
-    background-color: #555555; /* Cinza médio */
-    padding: 1.5rem;
-    margin-bottom: 2rem;
-    border-radius: 8px;
-}
-
-h2 {
-    color: #e63946; /* Vermelho para destacar títulos */
-    font-size: 1.8rem;
-}
-
-button.btn-custom {
+button {
     background-color: #e63946; /* Vermelho */
     color: #f1faee;
-    border: none;
     padding: 1rem 2rem;
+    border: none;
     font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
-button.btn-custom:hover {
-    background-color: #d62839; /* Vermelho escuro */
+button:hover {
+    background-color: #d62839; /* Vermelho mais escuro */
 }
 
 .protection-image {
     max-width: 100%;
     height: auto;
+    margin-top: 20px;
     border-radius: 8px;
 }
 
 footer {
+    position: absolute;
+    bottom: 10px;
     text-align: center;
-    padding: 1rem;
-    background-color: #444444;
     color: #f1faee;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
-/* Caixa de alerta */
 #attack-warning {
     position: fixed;
-    top: 50%;
+    top: 20%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #ff0000; /* Vermelho intenso */
+    transform: translateX(-50%);
+    background-color: #ff0000; /* Vermelho */
     color: #fff;
-    padding: 1rem 2rem;
+    padding: 20px;
     border-radius: 10px;
-    text-align: center;
     display: none;
+    z-index: 10;
+    text-align: center;
 }
 
-.warning-box {
-    background-color: #ff4d4d;
-    padding: 1rem;
-    border-radius: 8px;
-}
-
-/* Esconder alertas inicialmente */
 .hidden {
     display: none;
 }
