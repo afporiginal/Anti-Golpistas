@@ -1,3 +1,3 @@
-document.getElementById('protection-button').addEventListener('click', function () {
-    alert('You are now protected against Loiras, Franjudas, and Cacheadas who alisam o cabelo!');
+document.getElementById('vpn-button').addEventListener('click', function () {
+    alert('VPN ativada! Você agora está protegido contra golpes online e navega com segurança.');
 });
