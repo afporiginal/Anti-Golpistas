@@ -3,26 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Proteção Total Contra Golpes</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Cabeçalho -->
     <header>
-        <h1>Proteção Total Contra Golpes!</h1>
-        <p>Você está seguro contra loiras, franjudas e cacheadas que alisam o cabelo! Sua segurança está garantida.</p>
+        <nav>
+            <a href="#" class="logo">Proteção Anti-Golpes</a>
+            <ul class="nav-links">
+                <li><a href="#protection-section">Proteção</a></li>
+                <li><a href="#alert-section">Alertas</a></li>
+            </ul>
+        </nav>
     </header>
 
-        <button id="activate-vpn">Ativar Proteção VPN</button>
-    </div>
+    <!-- Seção Principal -->
+    <section id="main-section">
+        <h1>Bem-vindo à Proteção Total</h1>
+        <p>Você está seguro contra loiras, franjudas e cacheadas que alisam o cabelo!</p>
 
-    <div id="alert-section" class="hidden">
-        <h2>Atenção!</h2>
-        <p>Um ataque foi detectado! Sua ex-namorada está tentando invadir sua segurança. Estamos trabalhando para proteger você.</p>
-        <button id="dismiss-alert">Ignorar Alerta</button>
-    </div>
+        <div id="protection-section">
+            <button id="activate-vpn" class="btn">Ativar Proteção VPN</button>
+            <img src="https://via.placeholder.com/800x400.png?text=Imagem+de+Prote%C3%A7%C3%A3o" alt="Proteção Contra Golpes" id="protection-image">
+        </div>
 
+        <div id="alert-section" class="alert hidden">
+            <h2>Atenção!</h2>
+            <p>Um ataque foi detectado! Sua ex-namorada está tentando invadir sua segurança. Estamos trabalhando para proteger você.</p>
+            <button id="dismiss-alert" class="btn">Ignorar Alerta</button>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
     <footer>
-        <p>Feito por AFPL | afploriginal</p>
+        <p>Feito por AFPL | afploriginal &copy; 2025</p>
     </footer>
 
     <script src="script.js"></script>
