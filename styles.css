@@ -108,27 +108,49 @@ header nav .nav-links li a:hover {
 
 /* Seção de alertas */
 #alert-section {
-    position: fixed;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
     background-color: #ff6347;
     color: #fff;
     padding: 30px;
     border-radius: 8px;
-    display: none;
     text-align: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-    width: 300px;
+    margin-top: 30px;
 }
 
 #alert-section h2 {
     margin-bottom: 15px;
 }
 
-.hidden {
-    display: none;
+/* Histórico de Ataques */
+#attack-history {
+    margin-top: 40px;
+    background-color: #333;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 900px;
+    width: 100%;
+    text-align: left;
+}
+
+#attack-history h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+#history-list {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#history-list li {
+    background-color: #444;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#history-list li strong {
+    color: #e63946;
 }
 
 /* Rodapé */
@@ -155,5 +177,13 @@ footer p {
 
     .btn {
         padding: 0.8rem 1.5rem;
+    }
+
+    #attack-history {
+        padding: 20px;
+    }
+
+    #attack-history h2 {
+        font-size: 1.5rem;
     }
 }
