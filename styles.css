@@ -1,103 +1,136 @@
-/* Resetando margens e padding */
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo básico da página */
+/* Corpo e fundo */
 body {
     font-family: Arial, sans-serif;
-    background-color: #1d3557; /* Azul escuro */
-    color: #fff;
-    display: flex;
-    height: 100vh;
-    flex-direction: row;
-    overflow: hidden;
+    background-color: #f4f4f9;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Menu lateral fixo */
+body.dark-theme {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+/* Menu lateral */
 .side-menu {
-    width: 250px;
-    height: 100%;
-    background-color: #457b9d; /* Azul claro */
     position: fixed;
     top: 0;
-    left: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #34495e;
+    color: white;
+    transition: left 0.3s ease;
     padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    z-index: 1000;
 }
 
-.menu-header h2 {
-    color: #fff;
-    text-align: center;
-    margin-bottom: 20px;
+.side-menu.open {
+    left: 0;
 }
 
-.side-menu-links {
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-}
-
-.side-menu-links a {
-    color: #fff;
+.side-menu a {
+    display: block;
+    color: #ecf0f1;
     text-decoration: none;
-    padding: 10px 0;
-    font-size: 1.2rem;
-    transition: background-color 0.3s;
+    padding: 15px;
+    margin: 5px 0;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
 }
 
-.side-menu-links a:hover {
-    background-color: #1d3557;
+.side-menu a:hover {
+    background-color: #2980b9;
+    border-radius: 5px;
 }
 
-/* Estilo do conteúdo principal */
-.content {
-    margin-left: 250px;
-    padding: 20px;
-    width: 100%;
+/* Botão do menu */
+.menu-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #34495e;
+    cursor: pointer;
+    z-index: 1100;
 }
 
 /* Seções */
 .section {
     display: none;
     padding: 20px;
-    border-radius: 8px;
-    background-color: #f1faee; /* Cor clara para contraste */
-    margin-bottom: 20px;
+    margin-left: 250px;
+    transition: margin-left 0.3s ease;
 }
 
-#home {
+.home-section {
     display: block;
 }
 
-/* Botões */
+.home-section h1 {
+    color: #2980b9;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    color: #2980b9;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
 button {
-    background-color: #e63946;
-    color: #fff;
-    padding: 1rem 2rem;
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 20px;
     border: none;
-    font-size: 1.2rem;
+    border-radius: 5px;
     cursor: pointer;
-    border-radius: 8px;
-    margin-top: 20px;
-    transition: background-color 0.3s;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #d62839;
+    background-color: #3498db;
 }
 
-/* Rodapé */
-footer {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    color: #f1faee;
-    font-size: 1rem;
+button:disabled {
+    background-color: #7f8c8d;
+    cursor: not-allowed;
+}
+
+/* Lista de histórico de ataques */
+ul#history-list {
+    list-style: none;
+}
+
+ul#history-list li {
+    margin-bottom: 10px;
+}
+
+ul#history-list li strong {
+    color: #2980b9;
+}
+
+/* Personalização de Tema */
+#theme-switch {
+    background-color: #2ecc71;
+}
+
+#theme-switch:hover {
+    background-color: #27ae60;
+}
+
+/* Transição suave entre seções */
+.section.shifted {
+    margin-left: 0;
 }
