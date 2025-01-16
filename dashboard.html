@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard de Proteção</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="dashboard-section">
+        <!-- Menu -->
+        <div class="menu-bar">
+            <a href="#protection-section">Proteção</a>
+            <a href="#attack-history">Histórico de Ataques</a>
+            <a href="#settings-section">Configurações</a>
+            <a href="#personalization-section">Personalização</a>
+        </div>
+
+        <!-- Seção de Proteção -->
+        <section id="protection-section">
+            <h2>Proteção Ativada</h2>
+            <button id="activate-vpn" class="btn">Ativar VPN</button>
+            <img src="https://via.placeholder.com/800x400.png?text=Imagem+de+Prote%C3%A7%C3%A3o" alt="Proteção" id="protection-image">
+        </section>
+
+        <!-- Histórico de Ataques -->
+        <section id="attack-history">
+            <h2>Histórico de Ataques</h2>
+            <ul id="history-list">
+                <li><strong>23/01/2025:</strong> Tentativa de invasão detectada e neutralizada com sucesso.</li>
+                <li><strong>20/01/2025:</strong> Ataque de phishing bloqueado.</li>
+                <li><strong>15/01/2025:</strong> Malware neutralizado com sucesso.</li>
+            </ul>
+        </section>
+
+        <!-- Seção de Configurações -->
+        <section id="settings-section">
+            <h2>Configurações</h2>
+            <button class="btn">Alterar Senha</button>
+            <button class="btn">Ativar 2FA</button>
+        </section>
+
+        <!-- Seção de Personalização -->
+        <section id="personalization-section">
+            <h2>Personalização</h2>
+            <label for="theme-select">Escolha o Tema:</label>
+            <select id="theme-select">
+                <option value="dark">Escuro</option>
+                <option value="light">Claro</option>
+            </select>
+            <button class="btn">Salvar Preferências</button>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 AFPL. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
