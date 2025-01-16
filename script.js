@@ -66,7 +66,7 @@ function displayAttackHistory() {
     });
 }
 
-// Exibindo o histórico ao acessar a página de histórico
+// Exibindo o histórico ao acessar a página
 document.getElementById('history-link').addEventListener('click', displayAttackHistory);
 
 // Função para exibir a área de configurações
@@ -79,6 +79,11 @@ document.getElementById('protection-link').addEventListener('click', function() 
     showSection('protection');
 });
 
+// Função para exibir a área de personalização
+document.getElementById('customization-link').addEventListener('click', function() {
+    showSection('customization');
+});
+
 // Função para voltar à tela inicial
 document.getElementById('home-link').addEventListener('click', function() {
     showSection('home');
@@ -87,11 +92,4 @@ document.getElementById('home-link').addEventListener('click', function() {
 // Função de customização (Exemplo básico de ajuste de tema)
 document.getElementById('theme-switch').addEventListener('click', function() {
     document.body.classList.toggle('dark-theme');
-});
-
-// Função para iniciar a proteção automaticamente (simulação)
-window.addEventListener('load', function() {
-    setTimeout(() => {
-        activateProtection();
-    }, 3000);  // Ativa a proteção automaticamente após 3 segundos
 });
