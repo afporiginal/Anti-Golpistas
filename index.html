@@ -7,51 +7,41 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Botão de Menu (|||) -->
-    <div class="menu-button" id="menu-button">|||</div>
-
-    <!-- Menu de Navegação -->
-    <div class="side-menu" id="side-menu">
-        <ul>
-            <li><a href="#home">Tela Inicial</a></li>
-            <li><a href="#settings">Configurações</a></li>
-            <li><a href="#history">Histórico de Ataques</a></li>
-            <li><a href="#protection">Proteção</a></li>
-            <li><a href="#personalization">Personalização</a></li>
-        </ul>
+    <div id="side-menu" class="side-menu">
+        <div class="menu-header">
+            <h2>Menu</h2>
+        </div>
+        <nav class="side-menu-links">
+            <a href="#" id="home-link">Início</a>
+            <a href="#" id="settings-link">Configurações</a>
+            <a href="#" id="history-link">Histórico de Ataques</a>
+            <a href="#" id="protection-link">Proteção</a>
+        </nav>
     </div>
 
-    <!-- Conteúdo da Página -->
-    <div class="content" id="home">
-        <header>
-            <h1>Proteção Total Contra Golpes!</h1>
+    <div id="content" class="content">
+        <div id="home" class="section">
+            <h1>Proteção Total Contra Golpes</h1>
             <p>Você está seguro contra loiras, franjudas e cacheadas que alisam o cabelo! Sua segurança está garantida.</p>
             <button id="activate-protection">Ativar Proteção</button>
-        </header>
-        <div id="alert-section"></div>
-    </div>
+        </div>
+        
+        <div id="settings" class="section">
+            <h2>Configurações</h2>
+            <p>Personalize suas configurações aqui.</p>
+        </div>
+        
+        <div id="history" class="section">
+            <h2>Histórico de Ataques</h2>
+            <ul id="history-list">
+                <!-- Histórico será carregado aqui -->
+            </ul>
+        </div>
 
-    <div id="settings" class="section">
-        <h2>Configurações</h2>
-        <select id="theme-select">
-            <option value="light">Modo Claro</option>
-            <option value="dark">Modo Escuro</option>
-        </select>
-    </div>
-
-    <div id="history" class="section">
-        <h2>Histórico de Ataques</h2>
-        <ul id="history-list"></ul>
-    </div>
-
-    <div id="protection" class="section">
-        <h2>Status de Proteção</h2>
-        <p id="protection-status">Proteção Desativada</p>
-    </div>
-
-    <div id="personalization" class="section">
-        <h2>Personalização</h2>
-        <p>Aqui você pode ajustar suas preferências de proteção e aparência.</p>
+        <div id="protection" class="section">
+            <h2>Proteção</h2>
+            <p>Ative ou desative a proteção aqui.</p>
+        </div>
     </div>
 
     <footer>
